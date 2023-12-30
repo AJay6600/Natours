@@ -1,0 +1,4 @@
+@function calWidth($total-width,$gutter-size,$num-of-col)
+{
+    @return ($total-width$gutter-size)/$num-of-col;
+}
