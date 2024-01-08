@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,23 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+             <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background"> &nbsp; </div>
+            <nav class="navigation__nav">
+             <ul class="navigation__list">
+                 <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Your Benifits</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                 <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+             </ul>
+            </nav>
+     
+         </div>
         <!-- header -->
         <header class="header">
             <div class="header__logo-box">
@@ -27,7 +45,7 @@
                     is where life happens
                 </span>
             </h1>
-            <a class="btn btn--white btn--animation" href="#">Discover our tours</a>
+            <a class="btn btn--white btn--animation" href="#section-tours">Discover our tours</a>
            </div>
         </header>     
         
@@ -104,7 +122,7 @@
             </section>
 
             <!-- section Tours -->
-             <section class="section-tours">
+             <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most Popular Tours
@@ -137,7 +155,7 @@
                                         <p class="card__price-only">only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now</a>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
                                </div>
                             </div>                           
                         </div>
@@ -168,7 +186,7 @@
                                         <p class="card__price-only">only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now</a>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
                                </div>
                             </div>                           
                         </div>
@@ -199,7 +217,7 @@
                                         <p class="card__price-only">only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now</a>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
                                </div>
                             </div>                           
                         </div>
@@ -298,8 +316,50 @@
                     </div>
                 </div>
              </section>
-
         </main>
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo">
+            </div>
+             <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy Policies</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Copyright &copy; by  <a href="" class="footer__link">Ajay More</a>
+                    </p>
+                </div>
+             </div>
+
+        </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tours Photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tours Photo" class="popup__img">
+                </div>
+                
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-medium">Start Booking Now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these term before booking</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum nisi quis eleifend quam. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Rutrum quisque non tellus orci ac auctor augue mauris. Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Eu ultrices vitae auctor eu augue ut lectus. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Lacus vestibulum sed arcu non odio euismod.
+                    </p>
+                    <a href="#" class="btn btn--green">Book Now</a>
+                </div>
+            </div>         
+        </div>
 
 <!--         
         <section>
