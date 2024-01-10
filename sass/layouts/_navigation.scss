@@ -59,6 +59,8 @@
         opacity: 0;   
         width: 0;    
         transition: all .8s;
+        visibility: hidden;
+        // display: none;
     }
     &__list{
         position: absolute;
@@ -100,6 +102,8 @@
     &__checkbox:checked ~ &__nav{
         opacity: 1;
         width: 100%;
+        visibility: visible;
+        
     }
 
     &__icon{
